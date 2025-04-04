@@ -10,7 +10,7 @@ const NavBar: React.FC = () => {
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
           <Shield className="h-6 w-6 text-safety-blue" />
-          <span className="font-bold text-xl text-safety-blue">SafetyAI</span>
+          <span className="font-bold text-xl text-safety-blue">ScheidlAI</span>
         </Link>
         
         <div className="hidden md:flex items-center space-x-8">

@@ -19,12 +19,12 @@ const Hero: React.FC = () => {
             </h1>
             
             <p className="text-lg text-gray-600">
-              Generate comprehensive safety documentation that's tailored to your industry and compliant with the latest regulations. Save time, reduce risk, and keep your workplace safe.
+              ScheidlAI generates comprehensive safety documentation that's tailored to your industry and compliant with the latest regulations. Save time, reduce risk, and keep your workplace safe.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="bg-safety-blue hover:bg-opacity-90 text-white px-8 py-6 text-lg">
-                Get Started for Free
+                Get Started with ScheidlAI
               </Button>
               <Button variant="outline" className="border-safety-blue text-safety-blue hover:bg-safety-blue hover:text-white px-8 py-6 text-lg">
                 View Packages
