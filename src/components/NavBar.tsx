@@ -15,25 +15,25 @@ const NavBar: React.FC = () => {
         
         <div className="hidden md:flex items-center space-x-8">
           <Link to="/" className="text-gray-600 hover:text-safety-blue transition-colors">
-            Home
+            Domů
           </Link>
           <Link to="/packages" className="text-gray-600 hover:text-safety-blue transition-colors">
-            Packages
+            Balíčky
           </Link>
           <Link to="/generator" className="text-gray-600 hover:text-safety-blue transition-colors">
-            Generator
+            Generátor
           </Link>
           <Link to="/about" className="text-gray-600 hover:text-safety-blue transition-colors">
-            About
+            O nás
           </Link>
         </div>
         
         <div className="flex items-center space-x-4">
           <Button className="bg-safety-blue hover:bg-opacity-90 text-white">
-            Login
+            Přihlášení
           </Button>
           <Button variant="outline" className="border-safety-blue text-safety-blue hover:bg-safety-blue hover:text-white">
-            Sign Up
+            Registrace
           </Button>
         </div>
       </div>

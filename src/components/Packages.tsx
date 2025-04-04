@@ -6,63 +6,63 @@ import { CheckCircle, X, AlertTriangle, Shield, User, Building, FileText } from 
 const packages = [
   {
     icon: <User className="h-10 w-10 text-safety-blue" />,
-    name: "Basic",
-    price: "$49",
-    period: "per month",
-    description: "Essential safety documentation for small businesses",
+    name: "Základní",
+    price: "1 199 Kč",
+    period: "měsíčně",
+    description: "Základní bezpečnostní dokumentace pro malé podniky",
     features: [
-      "Up to 5 different document types",
-      "Monthly regulation updates",
-      "Basic risk assessment",
-      "Email support",
-      "PDF exports"
+      "Až 5 různých typů dokumentů",
+      "Měsíční aktualizace předpisů",
+      "Základní hodnocení rizik",
+      "E-mailová podpora",
+      "Export do PDF"
     ],
     notIncluded: [
-      "Custom industry templates",
-      "Advanced AI customization",
-      "Compliance monitoring"
+      "Šablony pro konkrétní odvětví",
+      "Pokročilé přizpůsobení AI",
+      "Sledování souladu s předpisy"
     ],
     color: "bg-white",
     highlight: false
   },
   {
     icon: <Building className="h-10 w-10 text-white" />,
-    name: "Professional",
-    price: "$149",
-    period: "per month",
-    description: "Comprehensive safety management for growing companies",
+    name: "Profesionální",
+    price: "3 599 Kč",
+    period: "měsíčně",
+    description: "Komplexní správa bezpečnosti pro rostoucí společnosti",
     features: [
-      "Up to 20 different document types",
-      "Weekly regulation updates",
-      "Advanced risk assessment",
-      "Industry-specific templates",
-      "Priority email & chat support",
-      "Multiple export formats",
-      "Basic compliance monitoring"
+      "Až 20 různých typů dokumentů",
+      "Týdenní aktualizace předpisů",
+      "Pokročilé hodnocení rizik",
+      "Šablony specifické pro odvětví",
+      "Prioritní e-mailová a chatová podpora",
+      "Více formátů exportu",
+      "Základní sledování souladu s předpisy"
     ],
     notIncluded: [
-      "Custom API integration",
-      "Dedicated account manager"
+      "Vlastní API integrace",
+      "Vyhrazený správce účtu"
     ],
     color: "bg-safety-blue",
     highlight: true
   },
   {
     icon: <Shield className="h-10 w-10 text-safety-teal" />,
-    name: "Enterprise",
-    price: "$399",
-    period: "per month",
-    description: "Complete safety compliance solution for large organizations",
+    name: "Podnikové",
+    price: "9 599 Kč",
+    period: "měsíčně",
+    description: "Kompletní řešení bezpečnostního souladu pro velké organizace",
     features: [
-      "Unlimited document types",
-      "Real-time regulation updates",
-      "Enterprise-grade risk assessment",
-      "Custom API integration",
-      "Dedicated account manager",
-      "24/7 priority support",
-      "Advanced compliance monitoring",
-      "Custom branding options",
-      "Multi-location support"
+      "Neomezené typy dokumentů",
+      "Aktualizace předpisů v reálném čase",
+      "Podnikové hodnocení rizik",
+      "Vlastní API integrace",
+      "Vyhrazený správce účtu",
+      "Prioritní podpora 24/7",
+      "Pokročilé sledování souladu s předpisy",
+      "Možnosti vlastní značky",
+      "Podpora více lokalit"
     ],
     notIncluded: [],
     color: "bg-white",
@@ -84,7 +84,7 @@ const PackageCard: React.FC<{
     <div className={`${pack.color} rounded-xl shadow-lg overflow-hidden border ${pack.highlight ? 'border-safety-blue' : 'border-gray-200'}`}>
       {pack.highlight && (
         <div className="bg-safety-orange text-white text-center py-1 text-sm font-medium">
-          Most Popular
+          Nejoblíbenější
         </div>
       )}
       
@@ -102,11 +102,11 @@ const PackageCard: React.FC<{
         <p className={`mb-6 ${subTextColor}`}>{pack.description}</p>
         
         <Button className={`w-full mb-6 ${buttonClass}`}>
-          Choose Plan
+          Vybrat plán
         </Button>
         
         <div className="space-y-3">
-          <p className={`font-medium ${textColor}`}>Includes:</p>
+          <p className={`font-medium ${textColor}`}>Zahrnuje:</p>
           {pack.features.map((feature, idx) => (
             <div key={idx} className="flex">
               <CheckCircle className={`h-5 w-5 mr-3 flex-shrink-0 ${pack.highlight ? 'text-white' : 'text-safety-teal'}`} />
@@ -116,7 +116,7 @@ const PackageCard: React.FC<{
           
           {pack.notIncluded.length > 0 && (
             <>
-              <p className={`font-medium mt-4 ${textColor}`}>Not included:</p>
+              <p className={`font-medium mt-4 ${textColor}`}>Není zahrnuto:</p>
               {pack.notIncluded.map((feature, idx) => (
                 <div key={idx} className="flex">
                   <X className={`h-5 w-5 mr-3 flex-shrink-0 ${pack.highlight ? 'text-white/70' : 'text-gray-400'}`} />
@@ -136,9 +136,9 @@ const Packages: React.FC = () => {
     <section className="py-16 bg-safety-gray">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-safety-dark mb-4">Choose the Right Safety Package</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-safety-dark mb-4">Vyberte si správný bezpečnostní balíček</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Select a plan that fits your organization's size and safety compliance needs.
+            Vyberte si plán, který odpovídá velikosti vaší organizace a potřebám bezpečnostní compliance.
           </p>
         </div>
         
@@ -152,13 +152,13 @@ const Packages: React.FC = () => {
           <div className="flex items-start">
             <AlertTriangle className="text-safety-orange h-6 w-6 mr-4 flex-shrink-0 mt-1" />
             <div>
-              <h4 className="text-lg font-semibold text-safety-dark mb-2">Need a custom solution?</h4>
+              <h4 className="text-lg font-semibold text-safety-dark mb-2">Potřebujete vlastní řešení?</h4>
               <p className="text-gray-600 mb-4">
-                We offer tailored safety compliance packages for industries with specific regulatory requirements. 
-                Contact us to discuss your unique needs.
+                Nabízíme individuální balíčky bezpečnostní compliance pro odvětví se specifickými regulačními požadavky.
+                Kontaktujte nás a prodiskutujeme vaše jedinečné potřeby.
               </p>
               <Button variant="outline" className="border-safety-orange text-safety-orange hover:bg-safety-orange hover:text-white">
-                Contact Sales
+                Kontaktujte obchodní oddělení
               </Button>
             </div>
           </div>

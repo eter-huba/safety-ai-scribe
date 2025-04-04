@@ -10,9 +10,9 @@ const AboutPage = () => {
       
       <div className="bg-safety-blue text-white py-12">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">About SafetyAI</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">O ScheidlAI</h1>
           <p className="text-white/80 text-lg max-w-2xl mx-auto">
-            We're on a mission to make workplaces safer through accessible, AI-powered safety documentation.
+            Naším posláním je zvýšit bezpečnost pracovišť prostřednictvím dostupné bezpečnostní dokumentace s podporou umělé inteligence.
           </p>
         </div>
       </div>
@@ -21,41 +21,41 @@ const AboutPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold text-safety-dark mb-4">Our Story</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-safety-dark mb-4">Náš příběh</h2>
               <p className="text-gray-600 mb-4">
-                SafetyAI was founded in 2023 by a team of workplace safety experts and AI specialists who recognized a critical problem: many businesses struggle to keep up with constantly changing safety regulations.
+                ScheidlAI byl založen v roce 2023 týmem odborníků na bezpečnost práce a specialistů na umělou inteligenci, kteří rozpoznali zásadní problém: mnoho podniků má potíže s udržením kroku s neustále se měnícími bezpečnostními předpisy.
               </p>
               <p className="text-gray-600 mb-4">
-                We set out to create a solution that would make professional-grade safety documentation accessible to businesses of all sizes, not just those with dedicated safety departments.
+                Rozhodli jsme se vytvořit řešení, které by zpřístupnilo profesionální bezpečnostní dokumentaci podnikům všech velikostí, nejen těm s vlastními bezpečnostními odděleními.
               </p>
               <p className="text-gray-600">
-                Today, our AI-powered platform is helping hundreds of companies across multiple industries maintain safer workplaces and stay compliant with the latest regulations.
+                Dnes naše platforma založená na umělé inteligenci pomáhá stovkám společností napříč různými odvětvími udržovat bezpečnější pracoviště a dodržovat nejnovější předpisy.
               </p>
             </div>
             
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-safety-gray p-6 rounded-lg">
                 <Building2 className="h-10 w-10 text-safety-blue mb-3" />
-                <h3 className="font-semibold text-lg text-safety-dark mb-2">Our Mission</h3>
-                <p className="text-gray-600">To make workplace safety accessible to all businesses through AI-powered solutions.</p>
+                <h3 className="font-semibold text-lg text-safety-dark mb-2">Naše mise</h3>
+                <p className="text-gray-600">Zpřístupnit bezpečnost práce všem podnikům prostřednictvím řešení s umělou inteligencí.</p>
               </div>
               
               <div className="bg-safety-gray p-6 rounded-lg">
                 <BookOpen className="h-10 w-10 text-safety-blue mb-3" />
-                <h3 className="font-semibold text-lg text-safety-dark mb-2">Our Expertise</h3>
-                <p className="text-gray-600">Combined 50+ years of experience in workplace safety regulations.</p>
+                <h3 className="font-semibold text-lg text-safety-dark mb-2">Naše zkušenosti</h3>
+                <p className="text-gray-600">Celkem více než 50 let zkušeností s předpisy bezpečnosti práce.</p>
               </div>
               
               <div className="bg-safety-gray p-6 rounded-lg">
                 <Users className="h-10 w-10 text-safety-blue mb-3" />
-                <h3 className="font-semibold text-lg text-safety-dark mb-2">Our Team</h3>
-                <p className="text-gray-600">Safety professionals, AI experts, and regulatory specialists.</p>
+                <h3 className="font-semibold text-lg text-safety-dark mb-2">Náš tým</h3>
+                <p className="text-gray-600">Bezpečnostní odborníci, experti na AI a specialisté na právní předpisy.</p>
               </div>
               
               <div className="bg-safety-gray p-6 rounded-lg">
                 <Orbit className="h-10 w-10 text-safety-blue mb-3" />
-                <h3 className="font-semibold text-lg text-safety-dark mb-2">Our Technology</h3>
-                <p className="text-gray-600">Advanced AI models trained on latest safety regulations and best practices.</p>
+                <h3 className="font-semibold text-lg text-safety-dark mb-2">Naše technologie</h3>
+                <p className="text-gray-600">Pokročilé modely AI vyškolené na nejnovějších bezpečnostních předpisech a osvědčených postupech.</p>
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@ const AboutPage = () => {
       
       <section className="py-12 bg-safety-gray">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-safety-dark mb-8 text-center">Why Choose SafetyAI?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-safety-dark mb-8 text-center">Proč zvolit ScheidlAI?</h2>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -72,10 +72,10 @@ const AboutPage = () => {
                 <div className="bg-safety-blue/10 p-2 rounded-lg mr-3">
                   <CheckCircle className="h-6 w-6 text-safety-blue" />
                 </div>
-                <h3 className="font-semibold text-lg text-safety-dark">Regulatory Expertise</h3>
+                <h3 className="font-semibold text-lg text-safety-dark">Znalost předpisů</h3>
               </div>
               <p className="text-gray-600">
-                Our system is regularly updated with the latest workplace safety regulations and industry-specific guidelines.
+                Náš systém je pravidelně aktualizován o nejnovější předpisy bezpečnosti práce a pokyny specifické pro dané odvětví.
               </p>
             </div>
             
@@ -84,10 +84,10 @@ const AboutPage = () => {
                 <div className="bg-safety-blue/10 p-2 rounded-lg mr-3">
                   <CheckCircle className="h-6 w-6 text-safety-blue" />
                 </div>
-                <h3 className="font-semibold text-lg text-safety-dark">AI Innovation</h3>
+                <h3 className="font-semibold text-lg text-safety-dark">Inovace v AI</h3>
               </div>
               <p className="text-gray-600">
-                We leverage the latest in AI technology to provide customized safety documentation that meets your specific needs.
+                Využíváme nejnovější technologie umělé inteligence k poskytování přizpůsobené bezpečnostní dokumentace, která splňuje vaše specifické potřeby.
               </p>
             </div>
             
@@ -96,10 +96,10 @@ const AboutPage = () => {
                 <div className="bg-safety-blue/10 p-2 rounded-lg mr-3">
                   <CheckCircle className="h-6 w-6 text-safety-blue" />
                 </div>
-                <h3 className="font-semibold text-lg text-safety-dark">Customer Success</h3>
+                <h3 className="font-semibold text-lg text-safety-dark">Podpora zákazníků</h3>
               </div>
               <p className="text-gray-600">
-                Our dedicated support team includes safety professionals who understand your industry's unique challenges.
+                Náš specializovaný tým podpory zahrnuje bezpečnostní odborníky, kteří rozumí jedinečným výzvám vašeho odvětví.
               </p>
             </div>
           </div>
@@ -108,25 +108,25 @@ const AboutPage = () => {
       
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-safety-dark mb-8">Meet Our Leadership Team</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-safety-dark mb-8">Seznamte se s naším vedením</h2>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div>
               <div className="aspect-square bg-safety-gray rounded-full mb-4 mx-auto w-48"></div>
               <h3 className="font-semibold text-lg text-safety-dark">Sarah Johnson</h3>
-              <p className="text-gray-600">CEO & Co-Founder</p>
+              <p className="text-gray-600">CEO & spoluzakladatelka</p>
             </div>
             
             <div>
               <div className="aspect-square bg-safety-gray rounded-full mb-4 mx-auto w-48"></div>
               <h3 className="font-semibold text-lg text-safety-dark">Michael Chen</h3>
-              <p className="text-gray-600">CTO & Co-Founder</p>
+              <p className="text-gray-600">CTO & spoluzakladatel</p>
             </div>
             
             <div>
               <div className="aspect-square bg-safety-gray rounded-full mb-4 mx-auto w-48"></div>
               <h3 className="font-semibold text-lg text-safety-dark">Amara Williams</h3>
-              <p className="text-gray-600">Chief Safety Officer</p>
+              <p className="text-gray-600">Vedoucí bezpečnosti</p>
             </div>
           </div>
         </div>
@@ -134,7 +134,7 @@ const AboutPage = () => {
       
       <footer className="bg-safety-dark text-white py-8 mt-auto">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-white/70">© 2025 SafetyAI. All rights reserved.</p>
+          <p className="text-white/70">© 2025 ScheidlAI. Všechna práva vyhrazena.</p>
         </div>
       </footer>
     </div>

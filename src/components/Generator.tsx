@@ -34,79 +34,79 @@ const Generator: React.FC = () => {
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-3xl font-bold text-safety-dark mb-4">AI Safety Documentation Generator</h1>
+          <h1 className="text-3xl font-bold text-safety-dark mb-4">Generátor bezpečnostní dokumentace s AI</h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Create customized safety documentation specific to your industry and company needs. All generated documents comply with current regulations.
+            Vytvořte přizpůsobenou bezpečnostní dokumentaci specifickou pro vaše odvětví a potřeby společnosti. Všechny vygenerované dokumenty jsou v souladu s aktuálními předpisy.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           <Card>
             <CardContent className="pt-6">
-              <h2 className="text-xl font-semibold text-safety-dark mb-4">Document Parameters</h2>
+              <h2 className="text-xl font-semibold text-safety-dark mb-4">Parametry dokumentu</h2>
               
               <div className="space-y-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Industry
+                    Odvětví
                   </label>
                   <Select value={industry} onValueChange={setIndustry}>
                     <SelectTrigger>
-                      <SelectValue placeholder="Select your industry" />
+                      <SelectValue placeholder="Vyberte své odvětví" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="construction">Construction</SelectItem>
-                      <SelectItem value="manufacturing">Manufacturing</SelectItem>
-                      <SelectItem value="healthcare">Healthcare</SelectItem>
-                      <SelectItem value="food">Food Processing</SelectItem>
-                      <SelectItem value="warehouse">Warehouse & Logistics</SelectItem>
-                      <SelectItem value="office">Office Environment</SelectItem>
-                      <SelectItem value="retail">Retail</SelectItem>
-                      <SelectItem value="other">Other</SelectItem>
+                      <SelectItem value="construction">Stavebnictví</SelectItem>
+                      <SelectItem value="manufacturing">Výroba</SelectItem>
+                      <SelectItem value="healthcare">Zdravotnictví</SelectItem>
+                      <SelectItem value="food">Zpracování potravin</SelectItem>
+                      <SelectItem value="warehouse">Sklady a logistika</SelectItem>
+                      <SelectItem value="office">Kancelářské prostředí</SelectItem>
+                      <SelectItem value="retail">Maloobchod</SelectItem>
+                      <SelectItem value="other">Jiné</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Company Size
+                    Velikost společnosti
                   </label>
                   <Select value={companySize} onValueChange={setCompanySize}>
                     <SelectTrigger>
-                      <SelectValue placeholder="Select company size" />
+                      <SelectValue placeholder="Vyberte velikost společnosti" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="small">Small (1-49 employees)</SelectItem>
-                      <SelectItem value="medium">Medium (50-249 employees)</SelectItem>
-                      <SelectItem value="large">Large (250+ employees)</SelectItem>
+                      <SelectItem value="small">Malá (1-49 zaměstnanců)</SelectItem>
+                      <SelectItem value="medium">Střední (50-249 zaměstnanců)</SelectItem>
+                      <SelectItem value="large">Velká (250+ zaměstnanců)</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Document Type
+                    Typ dokumentu
                   </label>
                   <Select>
                     <SelectTrigger>
-                      <SelectValue placeholder="Select document type" />
+                      <SelectValue placeholder="Vyberte typ dokumentu" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="risk-assessment">Risk Assessment</SelectItem>
-                      <SelectItem value="safety-policy">Safety Policy</SelectItem>
-                      <SelectItem value="training-requirements">Training Requirements</SelectItem>
-                      <SelectItem value="emergency-procedures">Emergency Procedures</SelectItem>
-                      <SelectItem value="inspection-checklist">Inspection Checklist</SelectItem>
+                      <SelectItem value="risk-assessment">Hodnocení rizik</SelectItem>
+                      <SelectItem value="safety-policy">Bezpečnostní politika</SelectItem>
+                      <SelectItem value="training-requirements">Požadavky na školení</SelectItem>
+                      <SelectItem value="emergency-procedures">Nouzové postupy</SelectItem>
+                      <SelectItem value="inspection-checklist">Kontrolní seznam</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Specific Requirements or Hazards
+                    Specifické požadavky nebo rizika
                   </label>
                   <Textarea 
-                    placeholder="Describe any specific requirements, hazards, or areas of concern..."
+                    placeholder="Popište jakékoli specifické požadavky, rizika nebo oblasti zájmu..."
                     value={specifics}
                     onChange={(e) => setSpecifics(e.target.value)}
                     className="min-h-[100px]"
@@ -121,10 +121,10 @@ const Generator: React.FC = () => {
                   {isGenerating ? (
                     <>
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Generating...
+                      Generuji...
                     </>
                   ) : (
-                    <>Generate Documentation</>
+                    <>Vygenerovat dokumentaci</>
                   )}
                 </Button>
               </div>
@@ -134,8 +134,8 @@ const Generator: React.FC = () => {
           <div>
             <Tabs defaultValue="preview" className="w-full">
               <TabsList className="grid w-full grid-cols-2 mb-4">
-                <TabsTrigger value="preview">Document Preview</TabsTrigger>
-                <TabsTrigger value="history">Generation History</TabsTrigger>
+                <TabsTrigger value="preview">Náhled dokumentu</TabsTrigger>
+                <TabsTrigger value="history">Historie generování</TabsTrigger>
               </TabsList>
               <TabsContent value="preview">
                 <Card className="h-full">
@@ -143,72 +143,72 @@ const Generator: React.FC = () => {
                     {!documentGenerated ? (
                       <div className="flex flex-col items-center justify-center h-[400px] text-center">
                         <FileText className="h-16 w-16 text-gray-300 mb-4" />
-                        <h3 className="text-lg font-medium text-gray-700">No Document Generated Yet</h3>
+                        <h3 className="text-lg font-medium text-gray-700">Zatím nebyl vygenerován žádný dokument</h3>
                         <p className="text-gray-500 mt-2 max-w-xs">
-                          Fill in the parameters and click "Generate Documentation" to create your safety document.
+                          Vyplňte parametry a klikněte na "Vygenerovat dokumentaci" pro vytvoření bezpečnostního dokumentu.
                         </p>
                       </div>
                     ) : (
                       <>
                         <div className="flex justify-between items-center mb-4">
                           <h3 className="text-lg font-semibold text-safety-dark">
-                            {industry === "construction" ? "Construction Risk Assessment" : "Safety Document"}
+                            {industry === "construction" ? "Hodnocení rizik ve stavebnictví" : "Bezpečnostní dokument"}
                           </h3>
                           <div className="flex space-x-2">
                             <Button variant="outline" size="sm" onClick={handleCopy}>
                               {copied ? (
                                 <>
                                   <CheckCircle className="h-4 w-4 mr-1" />
-                                  Copied
+                                  Zkopírováno
                                 </>
                               ) : (
                                 <>
                                   <Copy className="h-4 w-4 mr-1" />
-                                  Copy
+                                  Kopírovat
                                 </>
                               )}
                             </Button>
                             <Button variant="outline" size="sm">
                               <Download className="h-4 w-4 mr-1" />
-                              Download
+                              Stáhnout
                             </Button>
                           </div>
                         </div>
 
                         <div className="border border-gray-200 rounded-md p-4 h-[350px] overflow-y-auto bg-white text-left">
-                          <h4 className="font-bold text-lg mb-2">OSHA-Compliant Risk Assessment</h4>
-                          <p className="text-sm text-gray-500 mb-4">Generated on April 4, 2025 | Based on latest OSHA regulations</p>
+                          <h4 className="font-bold text-lg mb-2">Hodnocení rizik v souladu s předpisy</h4>
+                          <p className="text-sm text-gray-500 mb-4">Vygenerováno 4. dubna 2025 | Na základě nejnovějších bezpečnostních předpisů</p>
                           
-                          <h5 className="font-semibold mb-2">1. Hazard Identification</h5>
+                          <h5 className="font-semibold mb-2">1. Identifikace nebezpečí</h5>
                           <p className="mb-3 text-sm">
-                            This risk assessment identifies potential hazards in a construction environment with specific focus on fall protection, electrical safety, and hazardous material handling as specified in the requirements.
+                            Toto hodnocení rizik identifikuje potenciální nebezpečí ve stavebním prostředí se specifickým zaměřením na ochranu proti pádu, elektrickou bezpečnost a manipulaci s nebezpečnými materiály, jak je uvedeno v požadavcích.
                           </p>
                           
-                          <h5 className="font-semibold mb-2">2. Risk Evaluation</h5>
+                          <h5 className="font-semibold mb-2">2. Vyhodnocení rizik</h5>
                           <p className="mb-3 text-sm">
-                            Based on the company size and industry specifications, the following risk levels have been assigned:
+                            Na základě velikosti společnosti a specifikací odvětví byly přiřazeny následující úrovně rizika:
                           </p>
                           <ul className="list-disc pl-5 mb-3 text-sm">
-                            <li>Fall hazards: High risk</li>
-                            <li>Electrical hazards: Medium risk</li>
-                            <li>Chemical exposure: Medium-high risk</li>
-                            <li>Equipment operation: Medium risk</li>
+                            <li>Nebezpečí pádu: Vysoké riziko</li>
+                            <li>Elektrická nebezpečí: Střední riziko</li>
+                            <li>Expozice chemikáliím: Středně vysoké riziko</li>
+                            <li>Provoz zařízení: Střední riziko</li>
                           </ul>
                           
-                          <h5 className="font-semibold mb-2">3. Control Measures</h5>
+                          <h5 className="font-semibold mb-2">3. Kontrolní opatření</h5>
                           <p className="mb-3 text-sm">
-                            The following control measures must be implemented according to OSHA standard 1926.500 for fall protection and 1926.400 for electrical safety:
+                            Následující kontrolní opatření musí být zavedena podle normy 1926.500 pro ochranu proti pádu a 1926.400 pro elektrickou bezpečnost:
                           </p>
                           <ul className="list-disc pl-5 mb-3 text-sm">
-                            <li>Guardrail systems installed on all elevated surfaces over 6 feet</li>
-                            <li>Personal Fall Arrest Systems (PFAS) required for all workers at heights</li>
-                            <li>Regular inspection of all electrical equipment and tools</li>
-                            <li>Proper grounding and GFCI protection for all electrical circuits</li>
-                            <li>Hazardous material storage according to SDS requirements</li>
+                            <li>Zábradlí instalované na všech vyvýšených površích nad 1,8 metru</li>
+                            <li>Osobní ochranné systémy proti pádu (PFAS) vyžadované pro všechny pracovníky ve výškách</li>
+                            <li>Pravidelná kontrola veškerého elektrického vybavení a nářadí</li>
+                            <li>Správné uzemnění a ochrana GFCI pro všechny elektrické obvody</li>
+                            <li>Skladování nebezpečných materiálů podle požadavků SDS</li>
                           </ul>
 
                           <p className="text-xs text-gray-400 mt-4">
-                            This document was generated using AI based on the latest OSHA regulations. Review by a safety professional is recommended.
+                            Tento dokument byl vygenerován pomocí AI na základě nejnovějších bezpečnostních předpisů. Doporučuje se kontrola bezpečnostním odborníkem.
                           </p>
                         </div>
                       </>
@@ -220,9 +220,9 @@ const Generator: React.FC = () => {
                 <Card className="h-full">
                   <CardContent className="pt-6">
                     <div className="h-[400px] flex flex-col items-center justify-center text-center">
-                      <h3 className="text-lg font-medium text-gray-700">No Generation History</h3>
+                      <h3 className="text-lg font-medium text-gray-700">Žádná historie generování</h3>
                       <p className="text-gray-500 mt-2 max-w-xs">
-                        Your document generation history will appear here after you create your first document.
+                        Historie generování dokumentů se zde zobrazí po vytvoření prvního dokumentu.
                       </p>
                     </div>
                   </CardContent>
